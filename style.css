@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg, #002B19 0%, #228051 100%) #228051  no-repeat ;
+    height: 100vh; margin: auto; padding: 2em; color: white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+
+.container {}
+.header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 27px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content:space-between;
+    align-content: stretch;
+}
+.half {
+    text-align: center;
+    max-width:50%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    align-self: start;
+    gap:10px;
+    padding: 20px;
+}
+.half:nth-child(1) {
+    background: linear-gradient(180deg, #002B19 0%, #228051 64.06%);
+    border-radius: 20px;
+}
+.subheader {
+    font-size: 0.8em;
+    line-height: 0.2em;
+}
+.bignumbers {
+    font-size: 1.9em;
+    line-height: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap
+}
+
+ul li:after {
+    content: ","
+}
+ul li:last-child:after {
+    content: ""
+}
+
+.btn {
+    border: none;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 32px;
+    font-size: 0.8em;
+    line-height: 1em;
+    max-width: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+button {
+    border: none;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:0px 16px;
+    gap: 8px;
+    border-radius: 32px;
+    font-size: 0.8em;
+    line-height: 1em;
+    cursor: pointer;
+}
+button:hover {
+    transition: all 0.3s;
+    opacity: .5;
+}
+.btn-winner {background: #FFF; color: #228051;}
+.btn-loser {background: #F78F8F; color: #FFF;}
+.btn-draw {background: #aa8ff7; color: #FFF;}
+.btn-drawcard {background: #FFB067; color: #228051;}
+.btn-stay {background: #0B2D1C; color: #FFB067;}
+.btn-newgame {border: 1px solid #FFB067; background: transparent; color: #FFB067;}
+.btn-newgame:hover {border: 1px solid #FFB067; background: #FFB067; color: #228051;opacity: 1;}
