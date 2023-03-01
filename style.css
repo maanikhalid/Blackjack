@@ -70,16 +70,23 @@ table {
 }
 .half {
     text-align: center;
-    max-width:50%;
-    width:50%;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    flex-wrap: wrap;
     align-self: start;
     gap:10px;
     padding: 20px;
+    margin: auto;
+    text-align: left;
+    width: 70%
+}
+.half img {
+    height: 150px;
+}
+h4 {
+    text-align: left;
 }
 .half:nth-child(1) {
     background: linear-gradient(180deg, #002B19 0%, #228051 64.06%);

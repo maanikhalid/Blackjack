@@ -10,65 +10,16 @@
 <div class="wrapper">
     <div class="container">
         <div class="header">Blackjack</div>
-        
         <div id="game" class="game-container">
-            <div class="half">
-                <div class="cards-icon">
-                    <img src="assets/cards%201.svg" width="50px" height="50px" />
-                </div>
-            
-                <div class="btn btn-winner" id="btn-winner">Winner</div>
-                <div class="btn btn-loser" id="btn-loser">Loser</div>
-                <div class="btn btn-draw" id="btn-draw">Draw</div>
-                <button class="btn btn-drawcard" onclick="drawCard()">Draw card</button>
-                <button class="btn btn-stay">Stay</button>
-                <br>
-                
-                <div class="subheader">Your cards</div>
-                <div id="" class="bignumbers">
-                    <ul id="playerCards">
-                        <li id="firstCard"></li>
-                        <li id="secondCard"></li>
-                    </ul>
-                </div>
-                
-                <div class="subheader">Total</div>
-                <div id="playerTotalCards" class="bignumbers">19</div>
-                <br>
-            </div><!-- end of half -->
-            
-            <div class="half">
-                <div class="cards-icon">
-                    <img src="assets/cards%201.svg" width="50px" height="50px" />
-                </div>
-                
-                <div class="btn btn-winner" id="btn-winner-ai">Winner</div>
-                <div class="btn btn-loser" id="btn-loser-ai">Loser</div>
-                <div class="btn btn-draw" id="btn-draw-ai">Draw</div>
-                <button class="btn btn-newgame">New game</button>
-                
-                <br>
-                <br>
-                <br>
-                
-                <div class="subheader">AI cards</div>
-                <div id="" class="bignumbers">
-                    <ul id="aiCards">
-                        <li>10</li>
-                        <li>12</li>
-                    </ul>
-                </div>
-
-                <div class="subheader">Total</div>
-                <div id="aiTotalCards" class="bignumbers">22</div>
-                <br>
-            </div><!-- end of half -->
-        
-            
-            
+           <div class="half">
+                <img src="assets/cards%201.svg" />
+               <h2 id="message-el">Want to play a game of  Blackjack?</h2>
+               <h4 id="card-el">Your cards:</h4>
+               <h4 id="sum-el">Sum: </h4>
+               <button class="btn btn-newgame" onclick="startGame()">Start game</button>
+               <button class="btn btn-draw" onclick="drawCard()">Draw card</button>
+            </div>
         </div>
-    
-    
     </div>
 </div>   
 <script src="script.js"></script>
