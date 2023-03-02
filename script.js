@@ -1,6 +1,7 @@
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
+let aiCardsDraw = getRandomCard()
 let sum = firstCard + secondCard 
 let hasBlackJack = false
 let isAlive = true
@@ -8,6 +9,9 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#card-el")
+let aimessageEl = document.getElementById("aimessage-el")
+let aisumEl = document.querySelector("#aisum-el")
+let aicardsEl = document.querySelector("#aicard-el")
 
 
 function  getRandomCard() {
@@ -20,6 +24,9 @@ function startGame(){
 
 function renderGame (){
     cardsEl.textContent = "Your cards: "
+    aicardsEl.textContent = "AI cards: " 
+    
+    for (i = 1 ; i < )
     
     for (i = 0 ; i < cards.length ; i++)
         {
@@ -44,7 +51,7 @@ function renderGame (){
 }
 
 function getRandomCard(){
-    let randomNumber = Math.floor(Math.random()*12 +1) 
+    let randomNumber = Math.floor(Math.random()*10 +1) 
     return randomNumber;
 }
 
