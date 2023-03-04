@@ -18,7 +18,7 @@ let aicardsEl = document.querySelector("#aicard-el")
 
 
 function  getRandomCard() {
-    
+    console.log("Hello")
 }
 
 function startGame(){
