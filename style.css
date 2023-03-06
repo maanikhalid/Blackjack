@@ -65,8 +65,9 @@ table {
 
 .game-container {
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-content: stretch;
+    margin: 0 auto;
 }
 .half {
     text-align: center;
