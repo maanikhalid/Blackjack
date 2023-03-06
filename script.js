@@ -3,6 +3,12 @@ let player = {
     chips : 0
 }
 
+let games = {
+    name : "You've played", 
+    amount : 0 ,
+    won : 0
+}
+
 let cards = []
 let sum = 0
 let sumAI = []
@@ -15,7 +21,10 @@ let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#card-el")
 let noMoreCards = document.querySelector(".btn-draw")
 let playerEl = document.querySelector("#player-el")
+let gamesPlayed = document.querySelector("#gamesPlayed")
+let gamesWon = document.querySelector("#gamesWon")
 
+    let spelling = ""
 
 
 playerEl.textContent= player.name + ": £" + player.chips
@@ -51,6 +60,12 @@ function renderGame (){
     if (hasBlackJack === true){
         player.chips += 10
         playerEl.textContent= player.name + ": £" + player.chips  + " Congrats!"
+        
+        games.won += 1
+        if (games.won > 1){ spelling = " games"}else{  spelling = " game"}
+        
+        gamesWon.textContent = "You've won: " + games.won + spelling
+        
     } else {
          playerEl.textContent= player.name + ": £" + player.chips 
     }
@@ -83,7 +98,10 @@ function startGame(){
     sum = firstCard + secondCard
     
         noMoreCards.textContent = "Draw new card"
-    
+   
+    if (games.amount > 0){ spelling = " games"}else{  spelling = " game"}
+    games.amount += 1
+    gamesPlayed.textContent = games.name + " " + games.amount + spelling
     renderGame()
 }
 
