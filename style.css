@@ -132,7 +132,7 @@ ul li:last-child:after {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 16px;
+    padding: 8px 0px;
     gap: 8px;
     border-radius: 32px;
     font-size: 0.8em;
